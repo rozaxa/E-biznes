@@ -14,3 +14,11 @@
 
 
 ✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie2)
+
+#### Zadanie 3 Kotlin 
+
+✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-3)
+
+✅ 3.5 wymaganie 2 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-3)
+
+
