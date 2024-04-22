@@ -21,9 +21,11 @@
 
 ✅ 3.5 wymaganie 2 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-3)
 
-
 #### Zadanie 4 Go 
 
 ✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-4)
 
+#### Zadanie 5 Frontend
+
+✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-5) 
 
