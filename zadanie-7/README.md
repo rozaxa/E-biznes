@@ -6,4 +6,4 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=rozaxa_E-biznes&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=rozaxa_E-biznes)
 
 
-Skan: [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie%201](https://sonarcloud.io/summary/new_code?id=rozaxa_E-biznes)
+Skan: [link](https://sonarcloud.io/summary/new_code?id=rozaxa_E-biznes)
