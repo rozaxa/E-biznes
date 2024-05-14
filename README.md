@@ -29,7 +29,12 @@
 
 ✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-5) 
 
-  #### Zadanie 6 Testy
+#### Zadanie 6 Testy
 
-✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-6) 
+✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-6)
+
+#### Zadanie 7 Sonar
+
+✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-7)
+
 
