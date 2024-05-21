@@ -37,4 +37,12 @@
 
 ✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-7)
 
+#### Zadanie 8 Oauth2
+
+✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-8)
+
+
+
+
+
 
