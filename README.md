@@ -41,6 +41,15 @@
 
 ✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-8)
 
+#### Zadanie 9 ChatGPT (LLAMA) bot 
+
+✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-9)
+
+✅ 3.5 wymaganie 2 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-9)
+
+✅ 4 wymaganie 3 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-9)
+
+
 
 
 
