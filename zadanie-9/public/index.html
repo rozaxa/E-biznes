@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot LLAMA3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            padding: 30px;
+            background-color: #f7f7f7;
+        }
+        #chatForm {
+            margin-top: 20px;
+        }
+        #userInput {
+            width: 75%;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        #responseContainer div {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #responseContainer div.user {
+            border-left: 3px solid #007bff;
+        }
+        #responseContainer div.bot {
+            border-left: 3px solid #a728a7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chatbot LLAMA3</h1>
+    <button id="startChat" class="btn btn-success">Start Chat</button>
+    <button id="endChat" class="btn btn-danger" style="display:none;">End Chat</button>
+    <form id="chatForm" class="form-inline" style="display:none;">
+        <input type="text" id="userInput" class="form-control" placeholder="Type your message here..." autocomplete="off" required>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+    <div id="responseContainer"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#startChat').on('click', function() {
+                $(this).hide();
+                $('#endChat').show();
+                $('#chatForm').show();
+                sendGreeting("start_chat");
+            });
+
+            $('#endChat').on('click', function() {
+                $(this).hide();
+                $('#startChat').show();
+                $('#chatForm').hide();
+                sendGreeting("end_chat");
+            });
+
+            $('#chatForm').on('submit', function(e) {
+                e.preventDefault();
+                var userInput = $('#userInput').val();
+                sendMessage(userInput);
+            });
+
+            function sendGreeting(type) {
+                $.ajax({
+                    url: '/api/chat',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({input: type}),
+                    success: function(response) {
+                        $('#responseContainer').append('<div class="bot">' + response.response + '</div>');
+                    },
+                    error: function() {
+                        $('#responseContainer').append('<div class="bot error">Error occurred.</div>');
+                    }
+                });
+            }
+
+            function sendMessage(message) {
+                $.ajax({
+                    url: '/api/chat',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({input: message}),
+                    success: function(response) {
+                        $('#responseContainer').append('<div class="user">User: ' + message + '</div>');
+                        $('#responseContainer').append('<div class="bot">' + response.response + '</div>');
+                        $('#userInput').val('');
+                    },
+                    error: function() {
+                        $('#responseContainer').append('<div class="bot error">Error occurred.</div>');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
