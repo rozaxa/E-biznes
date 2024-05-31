@@ -49,6 +49,11 @@
 
 ✅ 4 wymaganie 3 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-9)
 
+#### Zadanie 10 Chmura/CI 
+
+✅ 3.0 wymaganie 1 [link](https://github.com/rozaxa/E-biznes/tree/main/zadanie-10)
+
+
 
 
 
