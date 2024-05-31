@@ -1,0 +1,40 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

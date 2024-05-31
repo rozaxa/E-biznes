@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+  namespace: my-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: containeraf.azurecr.io/backend:latest
+        ports:
+        - containerPort: 8000
+      imagePullSecrets:
+      - name: acr-auth
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: my-app
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8000
+  selector:
+    app: backend
